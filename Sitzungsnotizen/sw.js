@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sitzungsnotiz-shell-v7';
+const CACHE_NAME = 'sitzungsnotiz-shell-v11';
 const APP_FILES = ['./', './index.html', './manifest.webmanifest', './spvgg.jpg', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './favicon.png'];
 
 self.addEventListener('install', event => {
