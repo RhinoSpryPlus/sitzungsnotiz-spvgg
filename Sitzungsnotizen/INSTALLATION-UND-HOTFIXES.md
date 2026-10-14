@@ -1,12 +1,23 @@
-# Sitzungsnotiz – Einrichtung ohne GitHub
+# Sitzungsnotiz – Einrichtung und Hotfixes
 
 ## Kurzüberblick
 
-Die App kann ohne GitHub über Netlify Drop veröffentlicht werden. Dafür werden die App-Dateien einmalig an Netlify übertragen. Netlify stellt sie unter einer HTTPS-Adresse bereit. Die Webseite ist öffentlich erreichbar, aber die App enthält keinen Dienst zum Hochladen deiner Sitzungsdaten: Protokolle und Teilnehmendenlisten werden im lokalen Speicher des jeweiligen Browsers abgelegt.
+Die App kann über GitHub Pages oder ohne GitHub über Netlify Drop veröffentlicht werden. Die Webseite ist öffentlich erreichbar, aber die App enthält keinen Dienst zum Hochladen deiner Sitzungsdaten: Protokolle und Teilnehmendenlisten werden im lokalen Speicher des jeweiligen Browsers abgelegt.
 
 Für die erste Installation und für spätere Aktualisierungen braucht das Gerät Internet. Nach dem ersten vollständigen Aufruf kann die App dank Offline-Cache auch ohne Internet starten. iPhone und iPad synchronisieren ihre Sitzungen nicht miteinander.
 
-## 1. App-Dateien hochladen
+## GitHub Pages: Änderungen und Hotfixes
+
+Wenn die App bereits über dein Repository `sitzungsnotiz-spvgg` veröffentlicht wird:
+
+1. Öffne im Repository den Ordner `Sitzungsnotizen`.
+2. Wähle **Add file → Upload files** und lade die aktualisierte App-Datei hoch. Für eine Änderung an der Oberfläche reicht meist `index.html`; bei Änderungen an Symbolen, Offline-Verhalten oder App-Einstellungen lade alle Dateien aus dem Startpaket hoch.
+3. Bestätige unten mit **Commit changes**. GitHub Pages veröffentlicht den Stand nach dem erfolgreichen Deployment unter derselben Website-Adresse.
+4. Öffne die App auf dem iPad mit Internetverbindung erneut und lade die Seite neu. Danach kann sie wieder offline verwendet werden.
+
+Lösche nicht die Safari-Websitedaten, um ein Update zu erzwingen: Dadurch könnten lokal gespeicherte Sitzungen verloren gehen. Die Adresse der App sollte gleich bleiben, damit die Sitzungen im lokalen Browser-Speicher erhalten bleiben.
+
+## Netlify Drop: erste Einrichtung
 
 1. Öffne [Netlify Drop](https://app.netlify.com/drop) auf dem PC.
 2. Melde dich an oder erstelle ein Netlify-Konto, damit du die Webseite dauerhaft verwalten und später Hotfixes veröffentlichen kannst.
